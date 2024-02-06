@@ -21,8 +21,8 @@ RUN git clone https://gitlab.com/DrWhatson/astro-cutouts.git && \
     cd astro-cutouts && \
     pip3 install -r requirements_spefic.txt .
 
-MKDIR /examples
-MKDIR /scripts
+RUN mkdir /examples
+RUN mkdir /scripts
 
 COPY examples /examples
 COPY scripts /scripts
